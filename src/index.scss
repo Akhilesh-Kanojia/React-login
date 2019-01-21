@@ -1,0 +1,82 @@
+#app{
+  min-height: 100vh;
+  background: #ccc;
+}
+#app > div{
+  position: relative;
+}
+#app > div .log-btn{
+  position: absolute;
+    right: 0px;
+    top: 10px;
+}
+    .login {
+      background: #003259;
+      box-shadow: 0px 0px 50px grey;
+      height: 100vh;
+    }
+  
+    .login form {
+      margin: 0 auto;
+      max-width: 320px;
+      background: rgb(116, 80, 80);
+      box-shadow: 0px 0px 50px grey;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    .login form label{
+      color: #fff;
+    }
+    .nav-tabs .nav-item .nav-link{
+      padding: .5rem 2rem;
+    }
+  .content-update{
+    padding-top: 20px;
+  }
+
+
+
+nav > .nav.nav-tabs{
+
+  border: none;
+    color:#fff;
+    border-radius:0;
+
+}
+nav > div .nav-item .nav-link,
+nav > div .nav-item .nav-link.active
+{
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+}
+
+nav > div .nav-item .nav-link.active:after
+ {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+  border-top-color: #e74c3c ;
+}
+.tab-content{
+    background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top:5px solid #e74c3c;
+    border-bottom:5px solid #e74c3c;
+    padding:30px 25px;
+}
+
+nav > div .nav-item .nav-link:hover,
+nav > div .nav-item .nav-link:focus
+{
+  border: none;
+    background: #e74c3c;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
