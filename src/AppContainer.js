@@ -15,7 +15,6 @@ class AppContainer extends Component {
    render() {
       const { location } = this.props;
       return (
-	  
          <div className="container">
          
             {location.pathname !== '/' && <section className="col-sm-12"> <Links /></section>}
@@ -31,7 +30,7 @@ class AppContainer extends Component {
                   {/*<Route  render={() => <h1>NotFound page</h1>}/> use this if u want to 404 error msg large*/} 
                </Switch>
             </section>
-            {location.pathname !== '/' && <button className="btn btn-primary log-btn" onClick={() => this.logout()}>LOGOUT</button>}
+            {location.pathname !== '/' && <button className="btn btn-primary log-btn" onClick={() => this.logout()}>Logout</button>}
          </div>
       );
    }
@@ -47,7 +46,6 @@ export function Links() {
             <li className="nav-item"><NavLink activeClassName="active" className="nav-link" to="/content">Content</NavLink></li>
             <li className="nav-item"> <NavLink activeClassName="active" className="nav-link" to="/form">Form</NavLink></li>
          </ul>
-		 		
       </nav>
    );
 } 
